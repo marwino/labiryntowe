@@ -1,4 +1,5 @@
-labiryntowe
+Fonty labiryntowe
 ===========
 
 Paczka fontów
+Pliki .spec
