@@ -14,7 +14,7 @@ BuildRequires: fontpackages-devel
 Requires:      fontpackages-filesystem
 
 %description
-Artifical alphabet. Conscript. Font was created by Jacek Szewczyk as a
+Artificial alphabet. Conscript. Font was created by Jacek Szewczyk as a
 practical realization of the idea of the alphabet the labyrinth.
 This font contains over 300 ligatures and most of the characters
 needed to complete the titles and monograms.
