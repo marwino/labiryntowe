@@ -1,11 +1,10 @@
 %global fontname labiryntowy
-%global shortname flabi
-# wersja 1.1
+# wersja 1.2
 
 Name:          %{fontname}-fonts
-Version:       1.541
+Version:       1.53
 Release:       1%{?dist}
-Summary:       Conscript (artifical font) letters consist of vertical and horizontal bars. No matter their thickness.
+Summary:       Conscript (artifical font) letters consist of vertical and horizontal bars.
 License:       OFL
 URL:           http://alfabet-ozdobny.appspot.com/?str=labiryntowy
 Source0:       https://alfabet-ozdobny.appspot.com/images/Labiryntowy_pl.tgz
@@ -22,22 +21,15 @@ This font contains over 300 ligatures and most of the characters
 needed to complete the titles and monograms.
 
 %prep
-%setup -q -c %{fontname}-%{version}-ttf
+%setup -q -c
 
 %build
 
 %install
-# This was wrong:
-# mkdir -p %{buildroot}-%{shortname}
-# cp -p *.ttf %{buildroot}-%{shortname}
-# _fontdir expands to /usr/share/fonts/labirintowy
 mkdir -p %{buildroot}%{_fontdir}
 cp -p *.ttf %{buildroot}%{_fontdir}
 
-# This generates the files section:
 %{_font_pkg} %{_fontdir}
-# This is useless -- it gets generated with _font_pkg too:
-# %files %{buildroot}-%{shortname}/*.ttf
 %doc opis.txt opis.pdf
 
 %changelog
