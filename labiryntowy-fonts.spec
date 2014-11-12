@@ -1,10 +1,9 @@
 %global fontname labiryntowy
-# wersja 1.2
 
 Name:          %{fontname}-fonts
 Version:       1.53
 Release:       1%{?dist}
-Summary:       Conscript (artifical font) letters consist of vertical and horizontal bars.
+Summary:       Artificial font consisting of vertical and horizontal bars
 License:       OFL
 URL:           http://alfabet-ozdobny.appspot.com/?str=labiryntowy
 Source0:       https://alfabet-ozdobny.appspot.com/images/Labiryntowy_pl.tgz
@@ -33,5 +32,5 @@ cp -p *.ttf %{buildroot}%{_fontdir}
 %doc opis.txt opis.pdf
 
 %changelog
-* Tue Nov 4 2014 <adres jest niedostepny pl> 1.53
+* Tue Nov 4 2014 <adres jest niedostepny pl> 1.53-1
 - Initial packaging.
