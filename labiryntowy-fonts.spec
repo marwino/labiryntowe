@@ -2,7 +2,7 @@
 
 Name:          %{fontname}-fonts
 Version:       1.53
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       Artificial font consisting of vertical and horizontal bars
 License:       OFL
 URL:           http://alfabet-ozdobny.appspot.com/?str=labiryntowy
@@ -29,8 +29,10 @@ mkdir -p %{buildroot}%{_fontdir}
 cp -p *.ttf %{buildroot}%{_fontdir}
 
 %{_font_pkg} %{_fontdir}
-%doc opis.txt opis.pdf
+%doc opis.txt
 
 %changelog
+* Mon Nov 17 2014 <adres jest niedostepny pl> 1.53-2
+- Add font licence file, delete info.
 * Tue Nov 4 2014 <adres jest niedostepny pl> 1.53-1
 - Initial packaging.
