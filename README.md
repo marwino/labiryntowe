@@ -1,6 +1,6 @@
 Fonty labiryntowe
 ===========
 
-Paczka fontów, może tym razem uda się to opublikować.
+Udało się opublikować font. Teraz go szlifujemy.
 
 Pliki .spec .src.rpm i .rpm
